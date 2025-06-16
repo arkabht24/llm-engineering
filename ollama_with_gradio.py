@@ -47,6 +47,6 @@ def chat(user_prompt):
 
 gr.Interface(fn=chat,
              inputs=gr.Textbox(label = "Enter your message"),
-             outputs=gr.Textbox(label = "Assistant's response"),
+             outputs=gr.Markdown(label = "Assistant's response"),
              title="Ollama chatbox by Arka",
              ).launch(share=True)
